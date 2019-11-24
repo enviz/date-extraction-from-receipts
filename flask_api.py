@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restful import Resource, Api, reqparse
 import werkzeug, os
 from source_code import extract_date
-
+#type python flask_api.py in your command prompt
 app = Flask(__name__)
 api = Api(app)
 # UPLOAD_FOLDER = os.getcwd()
