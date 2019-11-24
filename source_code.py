@@ -1,4 +1,4 @@
-from pytesseract import  image_to_string
+from tesseract import  image_to_string
 from PIL import Image,ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 import re
