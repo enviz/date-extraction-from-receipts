@@ -12,7 +12,7 @@ parser.add_argument('file',type=werkzeug.datastructures.FileStorage, location='f
 
 class Welcome(Resource):
     def get(self):
-        return {'how to use the api': "curl -X POST -F file=@'path_to_image' ip_address/extract_date"}
+        return {'how to use the api': "curl -X POST -F file=@'path_to_image' https://extract-date-receipt.herokuapp.com/extract_date"}
 
 
 class PhotoUpload(Resource):
