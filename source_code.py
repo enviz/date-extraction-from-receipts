@@ -1,8 +1,9 @@
-from tesseract import image_to_string
+from pytesseract import image_to_string
 from PIL import Image,ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 import re
 import dateutil.parser as dparser
+heroku config:set TESSDATA_PREFIX=/app/.apt/usr/share/tesseract-ocr/4.00/tessdata
 
 #I have used some basic heuristics after going through the images to get some features. It's not guaranteed to be optimal.
 
