@@ -30,7 +30,7 @@ class PhotoUpload(Resource):
         photo = data['file']
 
         if photo:
-            filename = 'your_image.jpeg'
+            
             response_date = extract_date(photo)
             #photo.save(os.path.join(UPLOAD_FOLDER,filename))
             
