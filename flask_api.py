@@ -2,7 +2,8 @@ from flask import Flask
 from flask_restful import Resource, Api, reqparse
 import werkzeug, os
 from source_code import extract_date
-#type python flask_api.py in your command prompt
+#type python flask_api.py in your command prompt(if you're using it on local host
+#if using heroku then: curl -X POST -F file=@'path_to_image' https://extract-date-receipt.herokuapp.com/extract_date
 app = Flask(__name__)
 api = Api(app)
 # UPLOAD_FOLDER = os.getcwd()
@@ -12,7 +13,7 @@ parser.add_argument('file',type=werkzeug.datastructures.FileStorage, location='f
 
 class Welcome(Resource):
     def get(self):
-        return {'how to use the api': "curl -X POST -F file=@'path_to_image' https://extract-date-receipt.herokuapp.com/extract_date"}
+        return {'how to use the api': "curl -X POST -F file=@'path_to_image' https://extract-date-receipt.herokuapp.com/extract_date" }
 
 
 class PhotoUpload(Resource):
