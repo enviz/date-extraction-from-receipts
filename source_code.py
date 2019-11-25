@@ -1,4 +1,4 @@
-from pytesseract import  image_to_string
+from tesserocr import image_to_text
 from PIL import Image,ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 import re
@@ -213,7 +213,7 @@ def extract_date(receipt):             #here is where you pass the image to get 
     
     img = Image.open(receipt)
 
-    all_text = image_to_string(img)
+    all_text = image_to_text(img)
     all_text = all_text.lower()
     check = []
         
