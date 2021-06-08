@@ -4,6 +4,6 @@ gunicorn==20.0.2
 pytesseract==0.3.0
 tesseract==0.1.3
 regex==2019.11.1
-Pillow==6.2.0
+Pillow==8.2.0
 python-dateutil==2.8.0
 Werkzeug==0.15.6
